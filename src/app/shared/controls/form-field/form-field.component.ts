@@ -1,6 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {AbstractControl } from '@angular/forms';
 
+
 @Component({
   selector: 'app-form-field',
   templateUrl: './form-field.component.html',
@@ -12,7 +13,7 @@ export class FormFieldComponent implements OnInit {
   @Input() required22: boolean;
   @Input() isInline22: boolean;
   @Input() control22: AbstractControl;
-
+  @Input() patternError: string;
 
   constructor() {
     this.isInline22 = true;
