@@ -1,0 +1,22 @@
+
+
+<h2>Form</h2>
+
+<form [formGroup]="form22" novalidate autocomplete="off"
+                                           (ngSubmit)="onSubmit22()">
+
+  <app-button (click)="onPatchValue22()">Patch Value</app-button>
+  <app-button (click)="onToggleInline22()">Toggle Inline</app-button>
+  <br><br><br>
+
+  <app-form-field label="Input33" [required22]="true"
+                  [control22]="form22.controls.input" [isInline22]="isInline22"
+  >
+    <app-input formControlName="input22"></app-input>
+  </app-form-field>
+
+</form>
+
+<code>
+  {{ form22.value | json }}
+</code>
