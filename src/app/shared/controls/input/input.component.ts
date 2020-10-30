@@ -14,8 +14,8 @@ import {NG_VALUE_ACCESSOR, ControlValueAccessor} from '@angular/forms';
   ]
 })
 export class InputComponent implements OnInit, ControlValueAccessor {
-  @Input() placeholder: string;
-  @Output() changed = new EventEmitter<string>();
+  @Input() placeholder22: string;
+  @Output() changed22 = new EventEmitter<string>();
   value22: string;
   isDisabled22: boolean;
 
@@ -47,7 +47,7 @@ export class InputComponent implements OnInit, ControlValueAccessor {
    onKeyup22(value: string): void {
     this.value22 = value;
     this.propagateChange22(value);
-    this.changed.emit(value);
+    this.changed22.emit(value);
    }
 
    onBlur22(): void {

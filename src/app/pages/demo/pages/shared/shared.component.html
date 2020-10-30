@@ -5,12 +5,19 @@
   <app-button (click)="onToggleInline22()">Toggle Inline</app-button>
   <br><br><br>
 
-  <app-form-field label="Input33" [required22]="true"
-                  [control22]="form22.controls.input" [isInline22]="isInline22"
-                  [patternError]="regexErrors.numbers"
+  <app-form-field label="Input33" [required22]="true" [control22]="form22.controls.input"
+                  [isInline22]="isInline22"  [patternError]="regexErrors.numbers"
   >
     <app-input formControlName="input"></app-input>
   </app-form-field>
+
+
+  <app-form-field label="Password" [required22]="true" [control22]="form22.controls.password"
+                           [isInline22]="isInline22">
+    <app-password formControlName="password"></app-password>
+  </app-form-field>
+
+
 
 </form>
 <code>

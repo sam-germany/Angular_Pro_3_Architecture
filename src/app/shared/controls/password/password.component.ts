@@ -17,14 +17,14 @@ type PasswordType = 'password' | 'text';
 })
 export class PasswordComponent implements OnInit , ControlValueAccessor{
 
-  @Input() placeholder: string;
-  @Output() changed = new EventEmitter<string>();
+  @Input() placeholder33: string;
+  @Output() changed33 = new EventEmitter<string>();
   value33: string;
   isDisabled33: boolean;
-  passwordType: PasswordType;
+  passwordType33: PasswordType;
 
   constructor() {
-    this.passwordType = 'password';
+    this.passwordType33 = 'password';
   }
 
   ngOnInit(): void {}
@@ -47,11 +47,10 @@ export class PasswordComponent implements OnInit , ControlValueAccessor{
       this.isDisabled33 = isDisabled;
   }
 
-
   onKeyup33(value: string): void {
       this.value33 = value;
       this.propagateChange(value);
-      this.changed.emit(value);
+      this.changed33.emit(value);
   }
 
   onBlur33(): void {
@@ -59,7 +58,7 @@ export class PasswordComponent implements OnInit , ControlValueAccessor{
   }
 
   togglePassword(): void {
-    this.passwordType = this.passwordType === 'password' ? 'text' : 'password';
+    this.passwordType33 = this.passwordType33 === 'password' ? 'text' : 'password';
   }
 
 }
