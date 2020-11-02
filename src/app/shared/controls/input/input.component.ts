@@ -19,9 +19,7 @@ export class InputComponent implements OnInit, ControlValueAccessor {
   value22: string;
   isDisabled22: boolean;
 
-  constructor() {
-    console.log(this.value22);
-  }
+  constructor() {}
 
   ngOnInit(): void { }
 
@@ -29,18 +27,22 @@ export class InputComponent implements OnInit, ControlValueAccessor {
   private propagateTouched22: any =  () => { };
 
   writeValue(value: string): void {
+    console.log('--------1');
         this.value22 = value;
   }
 
   registerOnChange(fn: any): void {
+    console.log('--------2');
      this.propagateChange22 = fn;
   }
 
   registerOnTouched(fn: any): void {
+    console.log('--------3');
      this.propagateTouched22 = fn;
   }
 
   setDisabledState(isDisabled: boolean) {
+    console.log('--------4');
       this.isDisabled22 = isDisabled;
   }
 

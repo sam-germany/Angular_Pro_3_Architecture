@@ -1,0 +1,13 @@
+
+<div class="radios">
+  <div *ngFor="let x1 of items22">
+    <label class="radio" [class.radio_disabled]="isDisabled22">
+      {{ x1.label }}
+      <input type="radio" class="radio__input" [value]="x1.value"
+             [attr.disabled]="isDisabled22 ? true : null"
+             [checked]="isChecked22(x1.value)"
+             (change)="onChanged22(x1.value)">
+      <span class="checkbox__checkmark"></span>
+    </label>
+  </div>
+</div>

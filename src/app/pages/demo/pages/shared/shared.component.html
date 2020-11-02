@@ -6,16 +6,35 @@
   <br><br><br>
 
   <app-form-field label="Input33" [required22]="true" [control22]="form22.controls.input"
-                  [isInline22]="isInline22"  [patternError]="regexErrors.numbers"
-  >
+                  [isInline22]="isInline"  [patternError]="regexErrors.numbers">
     <app-input formControlName="input"></app-input>
   </app-form-field>
 
 
   <app-form-field label="Password" [required22]="true" [control22]="form22.controls.password"
-                           [isInline22]="isInline22">
+                  [isInline22]="isInline">
     <app-password formControlName="password"></app-password>
   </app-form-field>
+
+
+  <app-form-field label="Select" [required22]="true" [control22]="form22.controls.select"
+                  [isInline22]="isInline">
+    <app-select formControlName="select" [items]="items22"></app-select>
+  </app-form-field>
+
+
+  <app-form-field label="Checkboxes" [required22]="true" [control22]="form22.controls.checkboxes"
+                  [isInline22]="isInline">
+    <app-checkboxes formControlName="checkboxes" [items22]="items22"></app-checkboxes>
+  </app-form-field>
+
+
+
+  <app-form-field label="Radios" [required22]="true" [control22]="form22.controls.radios"
+                   [isInline22]="isInline">
+     <app-radios formControlName="radios" [items22]="items22"></app-radios>
+  </app-form-field>
+
 
 
 

@@ -29,6 +29,6 @@ export class FormFieldComponent implements OnInit {
 
   get errorKey22() {
     return this.control22 && this.control22.errors
-                          && Object.keys(this.control22.errors)[0];
+      && Object.keys(this.control22.errors)[0];
   }
 }
